@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="./header.css" rel="stylesheet">
+    <link href="./footer.css" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./global.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="full_screen">
+        <header>
+            <div class="links header_links">
+
+                <a data-toggle="modal" href="#loginModal">로그인</a>
+
+                <!-- The Modal -->
+                <div class="modal fade" id="loginModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="login_modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="login_modal-body">
+                                <div class="container_login">
+                                    <h2 class="modal-title">HearTrack</h2>
+                                    <h6 class="modal-subtitle ">로그인 이후 건강기록을 이용 하실 수 있습니다</h6>
+                                    <!-- Form -->
+                                    <form action="" method="post" class="login_form">
+                                        <!-- email input -->
+                                        <div class="first-input input__block first-input__block">
+                                            <input type="email" placeholder="아이디 입력" class="input" id="email" />
+                                        </div>
+                                        <!-- password input -->
+                                        <div class="input__block">
+                                            <input type="password" placeholder="비밀번호 입력" class="input" id="password" />
+                                        </div>
+                                        <div class="check-wrap_line">
+                                            <div class="check-wrap">
+                                                <input class="check-keep" type="checkbox" id="check" name="로그인상태유지">
+                                                <label for="check"> </label>
+                                                <span class="keep-txt">로그인 상태 유지</spap>
+                                            </div>
+                                            <a href="">비밀번호 찾기</a>
+                                        </div>
+                                        <!-- sign in button -->
+                                        <button class="signin__btn">
+                                            로그인
+                                        </button>
+                                    </form>
+                                    <!-- separator -->
+                                    <div class="separator">
+                                        <p>또는</p>
+                                    </div>
+                                    <!-- google button -->
+                                    <button class="google__btn">
+                                        <i class="fa-brands fa-google"></i>
+                                        Google 로그인
+                                    </button>
+                                    <!-- naver button -->
+                                    <button class="naver__btn">
+                                        <i class="fa-sharp fa-solid fa-n"></i>
+                                        Naver 로그인
+                                    </button>
+
+                                    <div>
+
+                                        <a href="">아직 회원이 아니신가요? 회원가입</a>
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+                <a href="/" class="link_text">고객센터</a>
+
+            </div>
+            <a href="/">로고</a>
+
+            <!-- 웹접근성 향상을 위해 fieldset과 legend를 사용해주는 것이 좋습니다. 
+                두 요소의 기본 디자인을 숨기는 방법은 CSS(.visually-hidden)를 참고해주세요-->
+            <div class="header_menu">
+                <a href="/" class="link_text header_nav">소개</a>
+                <a href="/" class="link_text header_nav">커뮤니티</a>
+                <a href="/" class="link_text header_nav">건강기록</a>
+                <a href="/" class="link_text header_nav">마이 페이지</a>
+                <a href="/" class="link_text header_nav">하티브 몰+</a>
+            </div>
+        </header>
+
+        <main>
+
+
+
+            <div class="container main_container">
+                <div class="main_container_card_group">
+                    <div class="card health_card">
+                        <div class="card-header"><img class="health_card_img"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQoAAAC+CAMAAAD6ObEsAAACB1BMVEX////+6AD/qgH/hQBeyQcGof3+AAD//v////3///z8///96QBHR0czMzM+Pj45OTkqKio0NDQnJycuLi5BQUFMTEwjIyNVVVVZWVlPT08fHx8AAAD///b9hgD/qAD4AAD4ugAAtvJbkNkAuPwAmvcAevj///BhyAjO9f3t//8AofgAlfUAhPMAfvKZmZlaywDwfwAAsfoArfzoAADgAAAAj/QAivTw8PBra2vb29vExMQUFBT//+v26Ez//OD63bHojzWM0e0Aou0Apvo9pucAluqfze0AhOa15vf0ube2traFhYWkpKSJiYnh+f7+/dj//cr9+bj69Kf58Jf37YP06mj25zvxuh72qSTwrjLsu0zsxGnvzIT11Jf76b/16Fb+67PxwF3x/+Pw8nu7559luSKt1gD30JrZ9sWAyUvj7BPpnEyn2n/yvoP7lQL85cKHyQfB4hDrhSLppV/S8b1cuxnv7hCy3o3xwj6Aygib03GXxxzyniDwsnB2wT/30qpiwuST3fBkw98Grd1ouL0+vWX9dxLiimworphOxkf2YBM0tIraQz8cpb7wPwwirK5Hwll4x/BetOyw3PH1zMsSosjjbG7tlZaOw+r4zr7S6vrcKysAaM1hmts7gdS5OjeaSUd/WVjmXFqtOzmLWFPoNDNZQkN3Oji6ISGELijnOjnpoaDwh4lte0wHAAAU3ElEQVR4nO1di2MTVbqf0pbzaJqkSZ9h2oqGNEmf9E1bAnmVlEfK+4IIYgUFUXFR3Cv3+r7rva5cd9uw2i2PXV1X3St/5P2+c2bynJmkIaFU50ebJpOZZM4vv+95zgRFsWHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsGHDhg0bNmzYsPFrADXYpG1jamAhEoksA+BPZAEQYPAcVwghsJfBodsa+niogHxI1YXl4ydOnjp95uX9ZwENDf927tx5wIsXXrp4+dJyJMC4OJSKG0nK9meGUAaDIJTgUODDZgvHT5468/LZlgYNLXjvuR2Ivj682XHu/CsXLl5eBj444SoeCYdRvu2pQOBIQPdMjZw4dWZ/jgWNC2Djub4dBQBSzr144eKlBZVJYQEhbKuH8aQgMBCVEU7V5ZNnzjYU0aALA6iQZORTgvq4cDmicg7K+hUYCKUgc7pw/PT+lqwKGoruIRV9BZLIu3/uxYvLAc5BF1s9lBogcPzU/uzYWwx0IQ2kr1AR+QA2VIVv9TiqBRXen3ASOXnGaPg6CeK5Ql8hOSkylQuXIoqQxvYKJ1QLguAljp8u9pKGjBS7zVL07Tj/0jITrw0hhZJtYS4iDyAYNwInzlRCRHkq9Ch74ZIKkUQElW1BBZwsxw8NiAD114SKrL2ce+USUyCebBO/QQUZgRMvCy+guYQnpiLrNF65pHLGtomzgNNUj5/RPGJFKEtFXtLRB2aybbItqqy8qqmhvCA2QUV2n3MvRZ5hXyH1yhie4cKVq69pBFQojIoNROOl7+DrEUXWrvjzjGVfcF7g2qG+Vq9dHxj94I2GzRhIw6ao2LHj7caxGzcZYeID4PxZqtSolvQwQlbevD062jT6Wkulitg0FSCK3sbGxltvLXBR+LNniAhFEMHBrxN27aOm0SbAwBtC+PVRxduNjUDG2MGbDPs8yjOVbhER7AlZ+P2AIKJpoOmd9xs2IYzN+QoURaMmDOxkGLXKtgoEG04gietNWQz8bjMWsikqdCZAGDci6CieKVWgStUrtzUWxO0H74tYWnsq3m7UuYC/tz5WnxFJyKQPHAUjgTc149DxWkuNqeiTP72NOVmAMN4KcOk4n4UEFAtFZeX6QFMh0HNWaiPPVSKHPk0UhRh7NwKuE0u0rS5MhJ3mIkc+3qmwGNuUgfT1Nhbjxk0hzC2eLZC5HmHvXS1lAmRRsYVUTkWxKEQkuSlPZUtlQSUTV26XEtHUNAoBtdaqMBAFcvExRHO+tRaCkiQBGTqKfQUG1FobSJ+RKNBhvB7Y6uwC3139fSkJmiw+qFQWFblNNA9DUQguVGXL8gv5voyoxUE0TxVNrwlvUeA+W+QNNrgQOFF4dv+/nz9//hzAWhIm5qEFVVWryp56Hk5kKURQE2aqyHpO0c9qyRIh7p/df+b0qZPHlyMLC4GAqgYWFiLLly++dOGV8+dynYkiuzEVheQCTmsLmn1a5LLSxCgy9E5LnhL0X2Dh1IllMWuuTSLqE8uAQOT4xQsvnusz8B4WooC0S3Lx9GfgReCggokBE1EIKkAWLQ0Fejh7+uTxBYbTXdLGRCO/MF3kSmD58oXzlfrMLBevQxTZkhlFoogoamod2VKkIZd1nn31xLKKM4dMTO7IhQaK9ksA2jZGOItcfqmQDSvzEE+Nfcy2oouDSwTYe7cxszJhQ7Oc32XzrJaXTy4HsPmGQyVaD0oMXxJLtGHgQhPsDXI1cvmVysxDo+PWAaiGnj4XjNBrIrMyMxANH7wvLeTsq8dVJtp+wi6YPGVURYGfo9nVKZQpnKvLWWmAKHqt2BCtrZtQjTztCAInunLVkgPdY4je3tnTy2o1RgxeVZCBgbScKpCNgxFBLH2K1RlhZOV6GRYGNC7eaEAieBU9SDQm9BpARp/0FGXo6G18V9TsBI56WpZCSeCOtWHk+PiP08uM6p36TQG9B/bRwUz+s7wmBMY+VClOuD89l0HZlQHz4KHZBrqR0dt3rqlcRSZYFfMVIrZA2qTefHesAiKw+/uxgmH+qa3d0l1meU9x9YqqcZCXRlUKJALCCWYLPHDgYG85+xC4dRN779l4VG+QlY8qYuL2mysELRdUTqtTLddaVKCMhQ/LCaNX/DsoJkjqT4VMBtgdg1ZNKa6+p8qJAbkmNVsoyYUzRMQhg7eQXkUqScz4yBuuHrhVgSrQXeA51j2CoNiJoje3LTFwZyVbEFCRSvL8/FKcrB7y8ryIyJ0l46AHLld8iic41T2GtaGMHXg6lQj655Wr5TUxOvBmIK9eRhFQPdcW0zhMni7R2Mm+vHAORNuGgsotCOY88NaYtANLQHbxNCIInJl6p6wgwE1cYYRlqch9ttqrECLHrEWV7LPSSSpZfmj+RDmGko/HymYXjY0fQhpTdwPB03qvTBwdGBgdvXqNYkzT8yqqzbULSFngNsyt4ZNXGdeHyyGhVyVxVOgglzYySdTNW+XzzrEDvP5NX1rePICJpo+ACTSJnCxYKJhDOsSlO+Ta9jTXX56LHUIUGWDBaDSYy1JxG5Bz80Y5Jhp7wUTq7ywIe7OcdYw2XV9RmL7GUo5CDX2yOw+fR4MielCaFts//1TbkUc/x8efpSFp5HjM58Gc7UhnyiM3yhapvW+xulZlQrHKtTLRQzABzq4wyaGpFwqxO8UpB0OI4n34CRFR9wd368+CpYgHnxadA+F84UZZdwE1av2m2GWMo6H/+kOTSKrNuQBNlMay6F4Y1l4JOdogNlroKt6HLSkIFvDBfyof7c2A92QpvBctOg1wNaALEzVoN729X/w3JHabr3oqpoJB/EglY//zpRyykSDAY4ImlJIylAIVe/d+8inis90J4GP8E3SddFWjJyoO4Z/slXxlkKaUeKLkPBRmyoXOyB8nJu+B5yT1aV4In85CiebmcOKr28ZkYGT5aIWUlhtEiY7vHY+lxKU/nKd2w4gTaXzF1fFx5GV8N/o5mt6Nj+BhBvdMxeCgYioUDKpK5KC5n+j940T/zp13VSLbY3UBjDGTbAbE//cPRqpAMq5ew8qwVJnR+DhQQWSFxVfxURAdJ1Ax/gKMPZFG6QdjQMoLsGlRo2I8Xmwg8rX5TcMkHHjo/eLrfmBi58SSUremL4YEFAXIork59qc/N5XWIQOjt98TK7wNfIWgAtwNpJJM/TQej8eCQhXx8fja6ngcFQNOFMb+2d7xeFyjAnYrVgXOjcKrsANjJb4TW35ffI2SQNwFX1QfTQinmfGHkQq8SWguo5CLK9TAPCQV8XgyJdc9K6CKeBwMBPbFe2vRcDy+ij5gLRwPIwFhcyrkiYCtvl5SqPaik9CI2NkPsuB1sg9wQ1IUQhjx5vhfvtIJaNIaNU13VOP3Bl8RDgMVGkepGI4dV9fR1XA4nAgmw/FECDxRDPYKxuLh5kXMt1OwOVzqK0Rhq3D1w1zU0L3l1zoRQhZqXXiQZYH0FFnEci5D9L0xeBgbJ1ABWkpGUxnEKg4xkRbBbhUUlkgn4MkghfAEvCAf/kV8GRMqdBSGkXzbkJhYqlNmgWaeCOczobmMgaw2bl8zf+uoHz5+f9KPAAMLr4ZUhUGdvgoml+Brzc3JRUZhJ/8qT4abdSrgPdYNXw4T93zXWUoEyoLWqfFNWKpQFIKMxFdfjmYdBaOm+e6639/s19HsT66mxSwYUuFPKIvA0RrnCXguw+FdBhdxDKkk7GlMBRRnjHFwF7I20wJoESC3qEsEgdppLY8Ef3NYI+MvX90W2efAnQAxX2e8PgjDTEoMDg76B5OLmHcrq3D3oRJM+gdjoTTcJtMcaBlcxMoyhfsZU0FFXRt4V4aNxi8MiAB8U5+ZQ8qCyQI9ZP+ILAMyCnQUxCx+rcP4B6PpDURmPYmDzFDC6SpsfqiEYENyIzM1OJUIhYCQqUU8JoXHmFEBhT5DE0EiZCZhKIs6hBD8AIuNI8tI4k9fjmIc5dx0ocf6FAwrxRgmUoynUBmJEJPbHyo0MQjDXwUq1hWeHBRUQAQ5NIgbDCHSOAImkh9AizHxbe2JAJBcJC0F5OLXrUPX+vTU1KGUdqk9U9am4OEG3FmHO89zJQpPJ2LTU4cyQMXU1PQikp86BPdMqNAQOGhOxE6RZondamsmVPhzEybizcmg9eGCiox2kShVFmGUQ1horB2amn5eoRvwZwrpSSt8cDpLxfS0NRVU+etkvwUVk/dE87y2YYTyVRMepJmslumsrsOohjIilQAjV9amp4EKOMW1oWmggoVw1LBHkhMOd4cWqUbFkDUVhHxjwQQ4TkzSazwnwtLFkbQAUFtZO6j1IUBGW1FAg4/w4Qac5xr8BSqUBFAyND20puRTgTtZUgGV3b1JKy7uz4BzrfX0UMaCCD8kRmXClqSCC6QzyeGhoeFHIQg3a3gHLWZ4SJJF+SHYJAwkAxuGLangkKZZyqJ/qfapBSQVZp6i2R+OpcvN167j4A89Ejg0PAyPHixyQcWwoGJDUAGugmlUQKgpTwWWW/cmLS0EHGft2BCvk46ZUwGeAjIKa9+0DqOHf3lY48JpwD00kNAj3AFiCVAxPLxnHRP9zAN40tpX4Jxqviz6JyYn8y2mHyykdk0L2SOU5bmJ20wGy70Z3XiwJw/Dew4tYsuOUaBoz0MsNNdx6zqFdPoR7LAIHyYeM7wnYzkQzC10WQANP//t799998P9vKAycU/OuNUIWImZxw+gAsoHZhm7CeWZh89n8XA9E2L4/TWEpp9/8GADScE7D0OYgGUePHg+JAxuHTdZvi7WA+z7fqDh/s//+Pt3swI/5JlM/2Nau68BEZN2oZgFFckUUyxXT4jv/hELBBBcny0TughthCgezvjGBq5JUVSW3gjhwj0uNlmKgoiXWgIx/PBdt+Rhtru75+c8Z/FPZloMbJoJMUzLUJoIlV1GQvXJT7lOgOubOFiEKqYNsc+nYoMBk3Mm+IIttOxanZm5kdnvugWQhq6Ojo4f7+dRMXHPqL9YJRf4G/WbM+GP0nKLzsSKXT28U3mpsn6CMFbh2TD8E0VPkhkRntiah31zx7o7ugQLgocOB6DD8a/8XLx/Samd30Q1r5kz0ZxMY0PVqkmCk4Isu6ZAbpNtcXHhmVaY6AsvqFg0o128ahakZ/YdPtLt6OnOossh8eNPf5uEIjVHxjdK7ZwFzkdZuYpEJeGKKrnFqdpaC30Dxx/xPJevJJbzan1zYmB6ZN/RI90d+TR0ONolET/94/5EUWbxT1bT2RBLV2HefawDZvaNzDocXV05Hnoc7QCgof2nf/1skIVDOK0VUF0ZCyqS6Zq9lTUIekhHe09XgRycTkFE+4+GPMhJgFoB5bxqml+FRfyoP2YOH+t2OHqK5IA0AFydP/1cYhg6Ff2PaxhBcKrGnIr1J+wGzOwDzFjsQMBDOtqQBgFNDu0up1MowuXtPjrzrXlN1v99Db8ah5kmWGEoSlNP8j77RrqdXrfH09Y1ss/o+Zl9R2d7XI4enQfBRI/D6RJEONtdvh48kC+ZaALxf7WjgtL8Bm8xYk/gKvbNtjnR78Nn62z1zBaRIVyD09HRg8hSAXIQcAIdHs8RcQzlVuXp5Ezt+t6lEyB5WKvePkbcWi6AVMDQ5kf0Z8BDHutytzk6dB4kFz0OV1ubxoTL3To7p58gIXfNLUR29WoCwlIWZel6tWvhZmZdmB22u1q9Xm8bUuHsnEWfse/wsS4X0tChMSFFAXLQeXC5vL7Zwzn/Ap79sbkqcHlBbZjAzpqpKsL+TJVUkFmRC3h9gE74deMI3d2HZx1tznbJg86FkENra2ubxkXrvPNooZ8lyi/mqqglFYqFr8BZ36pe9Qh6iTZfZxY+L4zU63XIOiKPio522NzaJgB66Gw/ZuBh75n7zdrlWFiXmufdyXR1VMy1woi9nR5Ap3bb6W5ra2115lPR0+FA+0FFCC5afZ4jc4ZZ9Iy535ysJRXctBoLr1XnnQm6iVZPITq9ba3eVkGFgMMJcvAKJhBej697zjgBgVL3rhkT/XdrOQ9Co2YWAgV6VVQcbnM4nB53ATxujxck4JRUOFxej9vrzXLR2dl11CwRw1N4bOYsINvktZk6xU6C+SRILF1dAdyN5uHVhppHBz4Ucsg+ElS4dzmNU7AsMLMwJmPiXo2YENdhKBxbN+HSiBqOVrf0a8YHovAaww1y8HjyiHD7tEzK4hwpZ1rju5iP/m9YLVs3nBrOHeNqoYKrOSoGOs020L0RE27kwaOLwj3vmTV2lPlnSLnCZ+6XKmKnXG9Sqy+Xw+YmocFYc9FECK4/Cm7+2jiBEaij2lpzyGfCLTXhhrte367uw1aVWhZ4AdKSQZHeP/kLJ7WbSSeiLZkqCaj+WEpczlOFhRyBVFsmCq1FEFQIUXh88+2mjrLoDGG4YMffFgfU/v6JX2r7JTjyfy4IJpL57gLXGIozqEZ9R5w6FcVwy7jq9u1yGWVSJhARnZNfcIVBThr9OyeBCQIVSq3IwMQCRRbKD6n+ZDQkVkrQakhHKlyF0KiQCcauXSaZlMkZEjFFwZV7d/OTzom797CRXsOOtwYYcTqaiImFZbFENK0ZYHW+QtTYBkAq5qHUqvYk6dL3kxP9iInJ75fqdBkE8q4yng6mUqlgWsTQ6qci53yi8+LU+g45QAI6P1KZgzAAWAKnM0vfPn78+NulGVazfKIY+pV+2pxOFRdW5zAzr/ehiuAG46j6/OU0S3Y+Eh1IXVawypk+7SpJqjzhtwPPupwup2jYFMDV6fHNVn+KVH4lCqVcm1uqzzdD6dfYa/HkCVfVz3WCNbSXAOrTXXPljzaBduWqPn5et68YlLbBMJrQ6nLMfHS3utpcjkIiHFBz+bqf/ESZdn71+s+ZBBHIN6f6d8A+UavbB+mVy1GAVl+nb77yZKIEpOALQ+p4uVSNcXQeMs08LjocXh+Yx9GtPq+twDEf1h4u2bGC6gx7eruObfVZbQ1G5kX55QWvAYW4YGKk/FG/Tsy5faIm93RiZ7Nzl6f64LHtQY66532CB9/8Ls/I9nBy9QKZO9YFNaqz69hvWBE5kJmZ37YebNiwYcOGDRs2bNiwYcOGDRs2bNiwYcOGDRs2bNiwYcOGDRs2bNiwYcOGDRs2flv4f959rv12EprQAAAAAElFTkSuQmCC"
+                                alt=""></div>
+                        <div class="card-body">BMI ㅁㅁㅁㅁ<br>ㅁㅁㅁㅁ</div>
+                        <div class="card-footer"><button class="card-footer_btn1">검사하기</button></div>
+                    </div>
+                    <div class="card health_card">
+                        <div class="card-header"><img class="health_card_img"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSThSzIVyGwlTjmtelKPrW3kE0JL0TKTblq2w&usqp=CAU"
+                                alt="심전도"></div>
+                        <div class="card-body">심전도 ㅁㅁㅁㅁ<br>ㅁㅁㅁㅁ</div>
+                        <div class="card-footer"><button class="card-footer_btn2">검사하기</button></div>
+                    </div>
+                    <div class="card health_card">
+                        <div class="card-header"><img class="health_card_img"
+                                src="data:image/png;base64,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"
+                                alt=""></div>
+                        <div class="card-body">혈당 ㅁㅁㅁㅁ<br>ㅁㅁㅁㅁ</div>
+                        <div class="card-footer"><button class="card-footer_btn3">검사하기</button></div>
+                    </div>
+                    <div class="card health_card">
+                        <div class="card-header"><img class="health_card_img"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcs8EwsFJNoPZRNU6TiKilpGZO0NNEZLBkEA&usqp=CAU"
+                                alt=""></div>
+                        <div class="card-body">혈압 ㅁㅁㅁㅁ<br>ㅁㅁㅁㅁ</div>
+                        <div class="card-footer"><button class="card-footer_btn4">검사하기</button></div>
+                    </div>
+                </div>
+
+
+                <div class="row sub_container">
+                    <div class="col-sm-8 ">
+                        <div class="main_board_title">
+                            <p>커뮤니티</p>
+                            <a href="">더보기 ></a>
+                        </div>
+                        <table class="main_board">
+                            <tr>
+                                <td><i class="fas fa-street-view fa-lg"></i> 테스트1</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-street-view fa-lg"></i> 테스트2</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-street-view fa-lg"></i> 테스트3</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-street-view fa-lg"></i> 테스트4</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="event_title">
+                            <p>이벤트</p>
+                            <a href="">더보기 ></a>
+                        </div>
+                        <img src="../qq.png" alt="" class="event_img">
+                    </div>
+                </div>
+
+
+
+                <div class="row etc_low">
+                    <div class="card etc_card satisfaction_survey">
+                        <div class="card-header etc_card_header">만족도조사</div>
+                        <div class="card-body etc_card_body">고객님 HearTrack 서비스에
+                            만족하셨나요?<br> 만족도와 의견을 남겨주시면,<br>
+                            더 향상된 서비스로 보답하겠습니다.</div>
+                            <img src="https://www.hcarelink.com/images/main/web_main_search.svg" alt="" class="satisfaction_survey_img">
+                        <div class="card-footer"><button type="button">참여하기 ></button></div>
+                    </div>
+                    <div class="card etc_card Consultation_inquiry">
+                        <div class="card-header etc_card_header">상담문의</div>
+                        <div class="card-body etc_card_body">HearTrack와 관련된 모든 문의사항을 정성껏 <br> 답변 해드리겠습니다.
+                            건강검진 및 서비스 이용 등 <br> 궁금한 점이 있으시면 문의주세요.</div>
+                            <img src="https://www.hcarelink.com/images/main/web_main_search.svg" alt="" class="satisfaction_survey_img">
+                            <div class="card-footer"><button type="button">온라인 문의 ></button></div>
+                    </div>
+                    <div class="card etc_card">
+                        <div class="card-body">
+                            <iframe class="card-body_utube" src="https://www.youtube.com/embed/MVDq7K47kqE"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+
+        <footer>
+            <!-- Site footer -->
+            <footer class="site-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <h6>About</h6>
+                            <p class="text-justify">This site is a comprehensive resource for information on <i>ECG data
+                                    analysis and healthcare</i>.
+                                It provides information on a wide range of topics, including</p>
+                        </div>
+
+                        <div class="col-xs-6 col-md-3">
+                            <h6>Categories</h6>
+                            <ul class="footer-links">
+                                <li><a href="http://scanfcode.com/category/c-language/">HearthCare</a></li>
+                                <li><a href="http://scanfcode.com/category/templates/">HearthCare AI</a></li>
+                                <li><a href="http://scanfcode.com/category/templates/">ECG</a></li>
+                                <li><a href="http://scanfcode.com/category/templates/">ECG AI</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-xs-6 col-md-3">
+                            <h6>Quick Links</h6>
+                            <ul class="footer-links">
+                                <li><a href="http://scanfcode.com/about/">고객센터</a></li>
+                                <li><a href="http://scanfcode.com/about/">Hative Shop +</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-sm-6 col-xs-12">
+                            <p class="copyright-text">Copyright &copy; 2023 ECG Data Analysis and Healthcare. All rights
+                                reserved.
+                                <a href="#">HearTrack</a>.
+                            </p>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <ul class="social-icons">
+                                <li><a class="google" href="#"><i class="fa-brands fa-google"></i></a></li>
+                                <li><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a class="instagram" href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a class="linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </footer>
+    </div>
+</body>
+
+</html>

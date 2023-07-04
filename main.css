@@ -1,0 +1,393 @@
+main {
+  min-height: 1000px;
+  margin: 0 auto;
+  /* header의 양쪽 여백(margin)을 동등하게 맞춤 -> 수평가운데정렬 */
+  width: 1920px;
+  height: 180px;
+  align-items: center;
+  /* 하위 요소들 수직 가운데정렬 */
+}
+
+.main_container_card_group {
+  background-image: linear-gradient(to top, white 50%, #E4EFFE 50%);
+  height: 330px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.health_card {
+  margin: 20px;
+  align-items: center;
+  width: 250px;
+  height: 300px;
+  border-radius: 5%;
+  position: relative;
+}
+
+.etc_card {
+  flex-direction: column;
+  margin: 10px;
+  width: 380px;
+  height: 200px;
+  margin: auto;
+  padding: 0px;
+}
+
+.event_img {
+  width: 390px;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.card-header {
+  background-color: transparent;
+  border-bottom-width: 0px;
+}
+
+.card-body {
+  height: auto;
+  width: auto;
+  padding: 0px;
+  position: relative;
+}
+
+.card-body_utube {
+  width: 380px;
+  height: 200px;
+  border-radius: 5%;
+}
+
+.etc_low {
+  align-items: center;
+  height: 200px;
+  text-align: left;
+  display: inline-flexbox;
+}
+
+.sub_container {
+  width: 1280px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin: 0px;
+}
+
+
+.main_board {
+  width: 820px;
+  text-align: left;
+  background-color: #F8F8F8;
+  border-radius: 3%;
+  height: 155px;
+}
+
+td {
+  padding-left: 20px;
+}
+
+.main_board_title {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  margin-bottom: 16px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #222;
+}
+
+.event_title {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.health_card_img {
+  width: 140px;
+  height: 140px;
+  border-radius: 30%;
+}
+
+.card-footer {
+  background-color: transparent;
+  border-top-width: 0px;
+  color: #fff;
+  display: block;
+  border-radius: 24px;
+  max-width: 180px;
+  width: 156px;
+  margin: 0;
+  text-align: center;
+  font-weight: 500;
+}
+
+.card-footer_btn1 {
+  background-color: #1687E5;
+  color: white;
+  width: 80px;
+  height: 32px;
+  border-radius: 7%;
+}
+
+.card-footer_btn2 {
+  background-color: #888C8F;
+  color: white;
+  width: 80px;
+  height: 32px;
+  border-radius: 7%;
+}
+
+.card-footer_btn3 {
+  background-color: #F67B37;
+  color: white;
+  width: 80px;
+  height: 32px;
+  border-radius: 7%;
+}
+
+.card-footer_btn4 {
+  background-color: #29BBC1;
+  color: white;
+  width: 80px;
+  height: 32px;
+  border-radius: 7%;
+}
+
+.satisfaction_survey {
+  text-align: left;
+  background-color: #E1F1FF;
+}
+
+.etc_card_header {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 15px;
+  margin-inline-start: 20px;
+}
+
+.etc_card_body {
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #595959;
+  margin-inline-start: 20px;
+}
+
+.satisfaction_survey_img {
+  position: absolute;
+  right: 24px;
+  bottom: 16px;
+}
+
+.Consultation_inquiry {
+  background-color: #E2F5F2;
+}
+
+
+
+.container_login {
+  display: block;
+  max-width: 680px;
+  width: 80%;
+  margin: 120px auto;
+}
+
+h1 {
+  color: #e91e63;
+  font-size: 48px;
+  letter-spacing: -3px;
+  text-align: center;
+  margin: 120px 0 80px 0;
+  transition: .2s linear;
+}
+
+.login_modal-header {
+  text-align: right;
+  margin: 10px;
+}
+
+.login_modal-body {
+  text-align: center;
+}
+
+.input__block {
+  margin: 20px auto;
+  display: block;
+  position: relative;
+
+  .first-input__block {
+    ::before {
+      content: "";
+      position: absolute;
+      top: -15px;
+      left: 50px;
+      display: block;
+      width: 0;
+      height: 0;
+      background: transparent;
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-bottom: 15px solid rgba(#0f132a, .1);
+      transition: .2s linear;
+    }
+  }
+
+  .signup-input__block {
+    ::before {
+      content: "";
+      position: absolute;
+      top: -15px;
+      left: 150px;
+      display: block;
+      width: 0;
+      height: 0;
+      background: transparent;
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-bottom: 15px solid rgba(#0f132a, .1);
+      transition: .2s linear;
+    }
+  }
+
+  input {
+    display: block;
+    width: 90%;
+    max-width: 680px;
+    height: 50px;
+    margin: 0 auto;
+    border-radius: 8px;
+    border: none;
+    background: rgba(#0f132a, .1);
+    color: rgba(#0f132a, .3);
+    padding: 0 0 0 15px;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+
+    :focus,
+    :active {
+      outline: none;
+      border: none;
+      color: rgba(#0f132a, 1);
+    }
+
+    .repeat__password {
+      opacity: 0;
+      display: none;
+      transition: .2s linear;
+    }
+  }
+}
+
+.login_form {
+  width: 100%;
+  max-width: 680px;
+  margin: 40px auto 10px;
+}
+
+.input {
+  background: rgb(247, 251, 255);
+  width: 90%;
+  max-width: 680px;
+  height: 50px;
+  border-radius: 8px;
+  margin: 0 auto;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  transition: .2s linear;
+  padding-left: 20px;
+}
+
+.signin__btn {
+  background: #5A7CE0;
+  color: white;
+  display: block;
+  width: 90%;
+  max-width: 680px;
+  height: 50px;
+  border-radius: 8px;
+  margin: 0 auto;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  box-shadow: 0 15px 30px rgba(#e91e63, .36);
+  transition: .2s linear;
+}
+
+.separator {
+  display: block;
+  margin: 30px auto 10px;
+  text-align: center;
+  height: 40px;
+  position: relative;
+  background: transparent;
+  color: rgba(#0f132a, .4);
+  font-size: 13px;
+  width: 90%;
+  max-width: 680px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    background: rgba(#0f132a, .2);
+    height: 1px;
+    width: 45%;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    right: 0;
+    background: rgba(#0f132a, .2);
+    height: 1px;
+    width: 45%;
+  }
+}
+
+.google__btn,
+.naver__btn {
+  display: block;
+  width: 90%;
+  max-width: 680px;
+  margin: 20px auto;
+  height: 50px;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 8px;
+  border: none;
+  line-height: 40px;
+
+  &.google__btn {
+    background: #909fbb;
+    color: white;
+    box-shadow: 0 15px 30px rgba(#5b90f0, .36);
+    transition: .2s linear;
+
+  }
+
+  &.naver__btn {
+    background: rgb(3, 199, 90);
+    color: white;
+    box-shadow: 0 15px 30px rgba(#25282d, .36);
+    transition: .2s linear;
+  }
+
+
+}
+
+.check-wrap_line {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  margin: 20px;
+}
