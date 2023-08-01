@@ -223,7 +223,7 @@
                                     <span class="pressure_info1"> <span class="result_1">● </span> 정상 </span>
                                     <span class="pressure_info2"> <span class="result_3">● </span> 저혈당 </span>
                                     <span class="pressure_info3"> <span class="result_4">● </span> 당뇨 전단계 </span>
-                                    <span class="pressure_info3"> <span class="result_2">● </span> 고혈당 </span>
+                                    <span class="pressure_info3"> <span class="result_2">● </span> 당뇨 </span>
                                 </div>
                                 <span id="ECG_test">
                                     <a href="" class="button">
