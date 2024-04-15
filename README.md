@@ -82,7 +82,7 @@
 
 <br>
 
-## ⌨️ 개발 설계
+## ⌨️ **개발 설계**
 
 ### 서비스 흐름도
 <img width="700" alt="image" src="https://github.com/ahgjatleo0/Final_Project/assets/129912074/a704ccce-611e-429e-8635-53d5a6c85865">
